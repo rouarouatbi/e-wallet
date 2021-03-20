@@ -47,7 +47,7 @@ public class AuthService {
                     "Email Invalid. Make sure you have a valid Email");
 
         }
-        if (!validators.passwordValidator(registerRequest.getPassword())) {
+        /*if (!validators.passwordValidator(registerRequest.getPassword())) {
             throw new SpringException(
                     "Password Invalid. Must have "
                             +"at least one lowercase letter "
@@ -56,7 +56,7 @@ public class AuthService {
                             +"minimum Characters = 6 maximum Characters = 16 "
                             +"Example : mySpecial1Password");
 
-        }
+        }*/
         if (!validators.usernameValidator(registerRequest.getUsername())) {
             throw new SpringException(
                     "Username Invalid. It must be of length ranging(3-30) and no Special Characters. "
